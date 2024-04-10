@@ -1,1 +1,329 @@
-/* место для вашего кода */
+/* **************************************** HEADER **************************************** */
+.header {
+  padding-top: 94px;
+  padding-right: 24px;
+  padding-bottom: 94px;
+  padding-left: 24px;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  padding-right: 26px;
+  padding-left: 26px;
+}
+
+.header__nav {
+  margin-right: 50px;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 33px;
+}
+
+.nav__item:not(:first-child) {
+  list-style: circle;
+}
+
+.nav__link {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.nav__link--active {
+  text-decoration: none;
+}
+
+.header__logo {
+  width: 133px;
+  height: 105px;
+}
+
+.address {
+  max-width: 240px;
+  margin-left: auto;
+}
+
+.address__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.address__item>* {
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 135%;
+}
+
+/* **************************************** SECTION COVER **************************************** */
+.cover {
+  position: relative;
+  margin-bottom: 180px;
+  padding: 172px 50px 51px 50px;
+  background: url(../images/cover.jpg) no-repeat;
+  background-size: 150%;
+}
+
+.cover:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 135px;
+}
+
+.cover__title>* {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.cover__title> :nth-child(1) {
+  align-self: start;
+  margin-bottom: 27px;
+}
+
+.cover__title> :nth-child(1)>span {
+  position: relative;
+  right: -30px;
+}
+
+.cover__title> :nth-child(2) {
+  right: 30px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.cover__title> :nth-child(2)>span {
+  position: relative;
+  right: -30px;
+}
+
+.cover__title> :nth-child(3) {
+  left: 30px;
+  align-self: end;
+}
+
+.cover__title> :nth-child(3)>span {
+  position: relative;
+  left: -30px;
+}
+
+.cover__bottom {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.cover__desc {
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 127%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.cover__btn {
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  font-weight: 500;
+  font-size: 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.cover__btn:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* **************************************** SECTION LOTS **************************************** */
+.lots {
+  margin-bottom: 148px;
+  padding: 0 24px 0 24px;
+}
+
+.lots__title {
+  margin-bottom: 27px;
+  margin-left: 40px;
+}
+
+.lots__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  color: #fff;
+  list-style: none;
+}
+
+.lots__item {
+  position: relative;
+  padding: 48px 40px;
+  background-position: center;
+  background-size: cover;
+}
+
+.lots__item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.lots__item:nth-child(1) {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.lots__item:nth-child(2) {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.lots__item:nth-child(3) {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+}
+
+.card__desc {
+  margin-top: auto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.lots__show-more {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* **************************************** SECTION ABOUT **************************************** */
+.about {
+  margin-bottom: 178px;
+  padding: 35px 23px 0 70px;
+}
+
+.about__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.about__logo {
+  max-width: 240px;
+  max-height: 240px;
+  margin-right: 72px;
+}
+
+.about__bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__desc {
+  max-width: 693px;
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.about__desc:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+/* **************************************** SECTION FOOTER **************************************** */
+.footer {
+  margin-bottom: 90px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.footer__address {
+  margin: 0;
+}
+
+.footer__nav .nav__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__nav .nav__item {
+  text-align: center;
+  list-style: none;
+}
+
+.footer__nav .nav__item {
+  margin: 0;
+}
+
+.footer__social a {
+  display: inline-block;
+  width: 48px;
+}
+
+.footer__social a:not(:last-child) {
+  margin-right: 43px;
+}
